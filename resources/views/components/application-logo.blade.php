@@ -1,0 +1,1 @@
+<img class="w-28" src="{{ asset('image/logo-frangia.png') }}" alt="Logo frangia.cl">
