@@ -1,0 +1,1 @@
+<img class="w-28" src="<?php echo e(asset('image/logo-frangia.png')); ?>" alt="Logo frangia.cl"><?php /**PATH C:\xampp\htdocs\appfrangia.cl\resources\views/components/application-logo.blade.php ENDPATH**/ ?>
