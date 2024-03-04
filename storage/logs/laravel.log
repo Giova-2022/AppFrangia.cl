@@ -6055,3 +6055,913 @@ Did you mean one of these?
 #18 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
 #19 {main}
 "} 
+[2024-03-03 21:26:29] local.ERROR: Vite manifest not found at: C:\xampp\htdocs\appfrangia.cl\public\build/manifest.json {"view":{"view":"C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\home.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-798090306 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#336</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-798090306\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Vite manifest not found at: C:\\xampp\\htdocs\\appfrangia.cl\\public\\build/manifest.json at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\home.blade.php(14): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#54 {main}
+
+[previous exception] [object] (Illuminate\\Foundation\\ViteManifestNotFoundException(code: 0): Vite manifest not found at: C:\\xampp\\htdocs\\appfrangia.cl\\public\\build/manifest.json at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\storage\\framework\\views\\3f2c5b9ddc84cd7f836fe0b29196b11b.php(14): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\xampp\\\\htdocs...')
+#54 {main}
+"} 
+[2024-03-03 21:28:42] local.ERROR: Vite manifest not found at: C:\xampp\htdocs\appfrangia.cl\public\build/manifest.json {"view":{"view":"C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\home.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-80686845 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#336</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-80686845\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":3,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Vite manifest not found at: C:\\xampp\\htdocs\\appfrangia.cl\\public\\build/manifest.json at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\home.blade.php(14): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+
+[previous exception] [object] (Illuminate\\Foundation\\ViteManifestNotFoundException(code: 0): Vite manifest not found at: C:\\xampp\\htdocs\\appfrangia.cl\\public\\build/manifest.json at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\storage\\framework\\views\\3f2c5b9ddc84cd7f836fe0b29196b11b.php(14): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 {main}
+"} 
+[2024-03-03 21:31:42] local.ERROR: Vite manifest not found at: C:\xampp\htdocs\appfrangia.cl\public\build/manifest.json {"view":{"view":"C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\layouts\\app.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1155061617 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#343</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1155061617\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","componentName":"<pre class=sf-dump id=sf-dump-1239453019 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"10 characters\">app-layout</span>\"
+</pre><script>Sfdump(\"sf-dump-1239453019\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","attributes":"<pre class=sf-dump id=sf-dump-670307902 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentAttributeBag</span> {<a class=sf-dump-ref>#1333</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-670307902\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","slot":"<pre class=sf-dump id=sf-dump-60564465 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentSlot</span> {<a class=sf-dump-ref>#1341</a><samp data-depth=1 class=sf-dump-expanded>
+  +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1338</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+    <span class=sf-dump-str title=\"10650 characters\">&lt;div class=&quot;py-12&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;p-4 sm:p-8 bg-gray-200 shadow sm:rounded-lg&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;div class=&quot;max-w-xl&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;h2 class=&quot;text-lg font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            informaci&#243;n del perfil<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            Actualice la informaci&#243;n del perfil y la direcci&#243;n de correo electr&#243;nico de su cuenta.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;form id=&quot;send-verification&quot; method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/email/verification-notification&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;    &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;form method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/profile&quot; class=&quot;mt-6 space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;        &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;name&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Nombre<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;name&quot; name=&quot;name&quot; type=&quot;text&quot; value=&quot;Valeria&quot; required=&quot;required&quot; autofocus=&quot;autofocus&quot; autocomplete=&quot;name&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;email&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Email<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; value=&quot;123@123.cl&quot; required=&quot;required&quot; autocomplete=&quot;username&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;flex items-center gap-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Guardar<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;p-4 sm:p-8 bg-gray-300 text-white shadow sm:rounded-lg&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;div class=&quot;max-w-xl&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;h2 class=&quot;text-lg font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            Actualizar contrase&#241;a<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            Aseg&#250;rese de que su cuenta utilice una contrase&#241;a larga y aleatoria para mantenerse segura.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;form method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/password&quot; class=&quot;mt-6 space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;        &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;put&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;update_password_current_password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Contrase&#241;a actual<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;update_password_current_password&quot; name=&quot;current_password&quot; type=&quot;password&quot; autocomplete=&quot;current-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;update_password_password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Nueva contrase&#241;a<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;update_password_password&quot; name=&quot;password&quot; type=&quot;password&quot; autocomplete=&quot;new-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;update_password_password_confirmation&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    confirmar Contrase&#241;a<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;update_password_password_confirmation&quot; name=&quot;password_confirmation&quot; type=&quot;password&quot; autocomplete=&quot;new-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;flex items-center gap-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Guardar<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;p-4 sm:p-8 bg-red-300 shadow sm:rounded-lg&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;div class=&quot;max-w-md&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                    &lt;section class=&quot;space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;h2 class=&quot;text-lg font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            Borrar cuenta<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            Una vez que se elimine su cuenta, todos sus recursos y datos se eliminar&#225;n permanentemente. Antes de eliminar su cuenta, descargue cualquier dato o informaci&#243;n que desee conservar.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150&quot; x-data=&quot;&quot; x-on:click.prevent=&quot;$dispatch(&#039;open-modal&#039;, &#039;confirm-user-deletion&#039;)&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Eliminar cuenta actual<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;div<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-data=&quot;{<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        show: false,<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        focusables() {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            // All focusable element types...<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            let selector = &#039;a, button, input:not([type=\\&#039;hidden\\&#039;]), textarea, select, details, [tabindex]:not([tabindex=\\&#039;-1\\&#039;])&#039;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            return [...$el.querySelectorAll(selector)]<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                // All non-disabled elements...<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                .filter(el =&gt; ! el.hasAttribute(&#039;disabled&#039;))<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        firstFocusable() { return this.focusables()[0] },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        lastFocusable() { return this.focusables().slice(-1)[0] },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        nextFocusable() { return this.focusables()[this.nextFocusableIndex()] || this.firstFocusable() },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        prevFocusable() { return this.focusables()[this.prevFocusableIndex()] || this.lastFocusable() },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        nextFocusableIndex() { return (this.focusables().indexOf(document.activeElement) + 1) % (this.focusables().length + 1) },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        prevFocusableIndex() { return Math.max(0, this.focusables().indexOf(document.activeElement)) -1 },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    }&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-init=&quot;$watch(&#039;show&#039;, value =&gt; {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        if (value) {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            document.body.classList.add(&#039;overflow-y-hidden&#039;);<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            setTimeout(() =&amp;gt; firstFocusable().focus(), 100)<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        } else {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            document.body.classList.remove(&#039;overflow-y-hidden&#039;);<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        }<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    })&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-on:open-modal.window=&quot;$event.detail == &#039;confirm-user-deletion&#039; ? show = true : null&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-on:close-modal.window=&quot;$event.detail == &#039;confirm-user-deletion&#039; ? show = false : null&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-on:close.stop=&quot;show = false&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-on:keydown.escape.window=&quot;show = false&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-on:keydown.tab.prevent=&quot;$event.shiftKey || nextFocusable().focus()&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-on:keydown.shift.tab.prevent=&quot;prevFocusable().focus()&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    x-show=&quot;show&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    class=&quot;fixed inset-0 overflow-y-auto px-4 py-6 sm:px-0 z-50&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    style=&quot;display: none;&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;div<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-show=&quot;show&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        class=&quot;fixed inset-0 transform transition-all&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-on:click=&quot;show = false&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter=&quot;ease-out duration-300&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-start=&quot;opacity-0&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-end=&quot;opacity-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave=&quot;ease-in duration-200&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-start=&quot;opacity-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-end=&quot;opacity-0&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;absolute inset-0 bg-gray-500 opacity-75&quot;&gt;&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;div<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-show=&quot;show&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        class=&quot;mb-6 bg-black rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:max-w-2xl sm:mx-auto&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter=&quot;ease-out duration-300&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-start=&quot;opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-end=&quot;opacity-100 translate-y-0 sm:scale-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave=&quot;ease-in duration-200&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-start=&quot;opacity-100 translate-y-0 sm:scale-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-end=&quot;opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;form method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/profile&quot; class=&quot;p-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;            &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;delete&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;h2 class=&quot;text-lg w-5/6 font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &#191;Est&#225;s seguro de que quieres eliminar tu cuenta?<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                Una vez que se elimine su cuenta, todos sus recursos y datos se eliminar&#225;n permanentemente. Ingrese su contrase&#241;a para confirmar que desea eliminar permanentemente su cuenta.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;mt-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;label class=&quot;block font-medium text-sm text-gray-700 sr-only&quot; for=&quot;password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Password<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-3/4&quot; id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Contrase&#241;a&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;mt-6 flex justify-end&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;button type=&quot;button&quot; class=&quot;inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150&quot; x-on:click=&quot;$dispatch(&#039;close&#039;)&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Cancelar<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150 ms-3&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    Borrar cuenta<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">&lt;/section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">                &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"10650 characters\">    &lt;/div&gt;</span>
+    \"\"\"
+</samp>}
+</pre><script>Sfdump(\"sf-dump-60564465\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","header":"<pre class=sf-dump id=sf-dump-1969576512 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentSlot</span> {<a class=sf-dump-ref>#1343</a><samp data-depth=1 class=sf-dump-expanded>
+  +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1342</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+    <span class=sf-dump-str title=\"91 characters\">&lt;h2 class=&quot;font-semibold text-xl text-whiteleading-tight&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"91 characters\">            Perfil<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+    <span class=sf-dump-str title=\"91 characters\">        &lt;/h2&gt;</span>
+    \"\"\"
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1969576512\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__laravel_slots":"<pre class=sf-dump id=sf-dump-1986463425 data-indent-pad=\"  \"><span class=sf-dump-note>array:2</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>__default</span>\" => <span class=sf-dump-note title=\"Illuminate\\View\\ComponentSlot
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentSlot</span> {<a class=sf-dump-ref>#1341</a><samp data-depth=2 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1338</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+      <span class=sf-dump-str title=\"10650 characters\">&lt;div class=&quot;py-12&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;p-4 sm:p-8 bg-gray-200 shadow sm:rounded-lg&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;div class=&quot;max-w-xl&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;h2 class=&quot;text-lg font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            informaci&#243;n del perfil<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            Actualice la informaci&#243;n del perfil y la direcci&#243;n de correo electr&#243;nico de su cuenta.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;form id=&quot;send-verification&quot; method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/email/verification-notification&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;    &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;form method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/profile&quot; class=&quot;mt-6 space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;        &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;name&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Nombre<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;name&quot; name=&quot;name&quot; type=&quot;text&quot; value=&quot;Valeria&quot; required=&quot;required&quot; autofocus=&quot;autofocus&quot; autocomplete=&quot;name&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;email&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Email<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; value=&quot;123@123.cl&quot; required=&quot;required&quot; autocomplete=&quot;username&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            <span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;flex items-center gap-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Guardar<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;p-4 sm:p-8 bg-gray-300 text-white shadow sm:rounded-lg&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;div class=&quot;max-w-xl&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;h2 class=&quot;text-lg font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            Actualizar contrase&#241;a<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            Aseg&#250;rese de que su cuenta utilice una contrase&#241;a larga y aleatoria para mantenerse segura.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;form method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/password&quot; class=&quot;mt-6 space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;        &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;put&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;update_password_current_password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Contrase&#241;a actual<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;update_password_current_password&quot; name=&quot;current_password&quot; type=&quot;password&quot; autocomplete=&quot;current-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;update_password_password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Nueva contrase&#241;a<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;update_password_password&quot; name=&quot;password&quot; type=&quot;password&quot; autocomplete=&quot;new-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;update_password_password_confirmation&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    confirmar Contrase&#241;a<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full&quot; id=&quot;update_password_password_confirmation&quot; name=&quot;password_confirmation&quot; type=&quot;password&quot; autocomplete=&quot;new-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;flex items-center gap-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Guardar<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;p-4 sm:p-8 bg-red-300 shadow sm:rounded-lg&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;div class=&quot;max-w-md&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                    &lt;section class=&quot;space-y-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;h2 class=&quot;text-lg font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            Borrar cuenta<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            Una vez que se elimine su cuenta, todos sus recursos y datos se eliminar&#225;n permanentemente. Antes de eliminar su cuenta, descargue cualquier dato o informaci&#243;n que desee conservar.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/header&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150&quot; x-data=&quot;&quot; x-on:click.prevent=&quot;$dispatch(&#039;open-modal&#039;, &#039;confirm-user-deletion&#039;)&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Eliminar cuenta actual<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;div<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-data=&quot;{<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        show: false,<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        focusables() {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            // All focusable element types...<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            let selector = &#039;a, button, input:not([type=\\&#039;hidden\\&#039;]), textarea, select, details, [tabindex]:not([tabindex=\\&#039;-1\\&#039;])&#039;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            return [...$el.querySelectorAll(selector)]<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                // All non-disabled elements...<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                .filter(el =&gt; ! el.hasAttribute(&#039;disabled&#039;))<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        firstFocusable() { return this.focusables()[0] },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        lastFocusable() { return this.focusables().slice(-1)[0] },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        nextFocusable() { return this.focusables()[this.nextFocusableIndex()] || this.firstFocusable() },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        prevFocusable() { return this.focusables()[this.prevFocusableIndex()] || this.lastFocusable() },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        nextFocusableIndex() { return (this.focusables().indexOf(document.activeElement) + 1) % (this.focusables().length + 1) },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        prevFocusableIndex() { return Math.max(0, this.focusables().indexOf(document.activeElement)) -1 },<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    }&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-init=&quot;$watch(&#039;show&#039;, value =&gt; {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        if (value) {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            document.body.classList.add(&#039;overflow-y-hidden&#039;);<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            setTimeout(() =&amp;gt; firstFocusable().focus(), 100)<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        } else {<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            document.body.classList.remove(&#039;overflow-y-hidden&#039;);<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        }<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    })&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-on:open-modal.window=&quot;$event.detail == &#039;confirm-user-deletion&#039; ? show = true : null&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-on:close-modal.window=&quot;$event.detail == &#039;confirm-user-deletion&#039; ? show = false : null&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-on:close.stop=&quot;show = false&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-on:keydown.escape.window=&quot;show = false&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-on:keydown.tab.prevent=&quot;$event.shiftKey || nextFocusable().focus()&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-on:keydown.shift.tab.prevent=&quot;prevFocusable().focus()&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    x-show=&quot;show&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    class=&quot;fixed inset-0 overflow-y-auto px-4 py-6 sm:px-0 z-50&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    style=&quot;display: none;&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;div<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-show=&quot;show&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        class=&quot;fixed inset-0 transform transition-all&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-on:click=&quot;show = false&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter=&quot;ease-out duration-300&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-start=&quot;opacity-0&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-end=&quot;opacity-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave=&quot;ease-in duration-200&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-start=&quot;opacity-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-end=&quot;opacity-0&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;div class=&quot;absolute inset-0 bg-gray-500 opacity-75&quot;&gt;&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;div<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-show=&quot;show&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        class=&quot;mb-6 bg-black rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:max-w-2xl sm:mx-auto&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter=&quot;ease-out duration-300&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-start=&quot;opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:enter-end=&quot;opacity-100 translate-y-0 sm:scale-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave=&quot;ease-in duration-200&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-start=&quot;opacity-100 translate-y-0 sm:scale-100&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        x-transition:leave-end=&quot;opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95&quot;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;form method=&quot;post&quot; action=&quot;http://localhost/appfrangia.cl/public/profile&quot; class=&quot;p-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;EqN4uegLJfaNZOhu4UKW8XozMnKQ08lC0IbQfUCO&quot; autocomplete=&quot;off&quot;&gt;            &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;delete&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;h2 class=&quot;text-lg w-5/6 font-medium text-gray-900&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &#191;Est&#225;s seguro de que quieres eliminar tu cuenta?<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;/h2&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;p class=&quot;mt-1 text-sm text-gray-600&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                Una vez que se elimine su cuenta, todos sus recursos y datos se eliminar&#225;n permanentemente. Ingrese su contrase&#241;a para confirmar que desea eliminar permanentemente su cuenta.<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;/p&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;mt-6&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;label class=&quot;block font-medium text-sm text-gray-700 sr-only&quot; for=&quot;password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Password<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;input  class=&quot;border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-3/4&quot; id=&quot;password&quot; name=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Contrase&#241;a&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;div class=&quot;mt-6 flex justify-end&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;button type=&quot;button&quot; class=&quot;inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-gray-700 uppercase tracking-widest shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150&quot; x-on:click=&quot;$dispatch(&#039;close&#039;)&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Cancelar<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\"><span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-red-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-red-500 active:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition ease-in-out duration-150 ms-3&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    Borrar cuenta<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/form&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">&lt;/section&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">                &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">        &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"10650 characters\">    &lt;/div&gt;</span>
+      \"\"\"
+  </samp>}
+  \"<span class=sf-dump-key>header</span>\" => <span class=sf-dump-note title=\"Illuminate\\View\\ComponentSlot
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentSlot</span> {<a class=sf-dump-ref>#1343</a><samp data-depth=2 class=sf-dump-compact>
+    +<span class=sf-dump-public title=\"Public property\">attributes</span>: <span class=sf-dump-note title=\"Illuminate\\View\\ComponentAttributeBag
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\View</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>ComponentAttributeBag</span> {<a class=sf-dump-ref>#1342</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+    </samp>}
+    #<span class=sf-dump-protected title=\"Protected property\">contents</span>: \"\"\"
+      <span class=sf-dump-str title=\"91 characters\">&lt;h2 class=&quot;font-semibold text-xl text-whiteleading-tight&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"91 characters\">            Perfil<span class=\"sf-dump-default sf-dump-ns\">\\n</span></span>
+      <span class=sf-dump-str title=\"91 characters\">        &lt;/h2&gt;</span>
+      \"\"\"
+  </samp>}
+</samp>]
+</pre><script>Sfdump(\"sf-dump-1986463425\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":3,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Vite manifest not found at: C:\\xampp\\htdocs\\appfrangia.cl\\public\\build/manifest.json at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\layouts\\app.blade.php(15): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Concerns\\ManagesComponents.php(99): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\resources\\views\\profile\\edit.blade.php(24): Illuminate\\View\\Factory->renderComponent()
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#62 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#63 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#64 {main}
+
+[previous exception] [object] (Illuminate\\Foundation\\ViteManifestNotFoundException(code: 0): Vite manifest not found at: C:\\xampp\\htdocs\\appfrangia.cl\\public\\build/manifest.json at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php:728)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Vite.php(293): Illuminate\\Foundation\\Vite->manifest('build')
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\storage\\framework\\views\\ae68d68f1901c7e6ebc76e528214fdce.php(15): Illuminate\\Foundation\\Vite->__invoke(Object(Illuminate\\Support\\Collection))
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Concerns\\ManagesComponents.php(99): Illuminate\\View\\View->render()
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\storage\\framework\\views\\52ca7e2a1aecc8c7ae82753c17ee4b21.php(39): Illuminate\\View\\Factory->renderComponent()
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): require('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(125): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(918): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(885): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#62 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#63 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#64 {main}
+"} 
+[2024-03-04 21:54:27] local.ERROR: Connection could not be established with host "mailpit:1025": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailpit failed: Host desconocido.  {"exception":"[object] (Symfony\\Component\\Mailer\\Exception\\TransportException(code: 0): Connection could not be established with host \"mailpit:1025\": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailpit failed: Host desconocido.  at C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php:154)
+[stacktrace]
+#0 [internal function]: Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\{closure}(2, 'stream_socket_c...', 'C:\\\\xampp\\\\htdocs...', 157)
+#1 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\symfony\\mailer\\Transport\\Smtp\\Stream\\SocketStream.php(157): stream_socket_client('mailpit:1025', 0, '', 60.0, 4, Resource id #994)
+#2 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(275): Symfony\\Component\\Mailer\\Transport\\Smtp\\Stream\\SocketStream->initialize()
+#3 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(213): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->start()
+#4 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\symfony\\mailer\\Transport\\AbstractTransport.php(69): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->doSend(Object(Symfony\\Component\\Mailer\\SentMessage))
+#5 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\symfony\\mailer\\Transport\\Smtp\\SmtpTransport.php(137): Symfony\\Component\\Mailer\\Transport\\AbstractTransport->send(Object(Symfony\\Component\\Mime\\Email), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#6 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(573): Symfony\\Component\\Mailer\\Transport\\Smtp\\SmtpTransport->send(Object(Symfony\\Component\\Mime\\Email), Object(Symfony\\Component\\Mailer\\DelayedEnvelope))
+#7 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(335): Illuminate\\Mail\\Mailer->sendSymfonyMessage(Object(Symfony\\Component\\Mime\\Email))
+#8 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Channels\\MailChannel.php(69): Illuminate\\Mail\\Mailer->send(Object(Closure), Array, Object(Closure))
+#9 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(148): Illuminate\\Notifications\\Channels\\MailChannel->send(Object(App\\Models\\User), Object(Illuminate\\Auth\\Notifications\\ResetPassword))
+#10 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(106): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(App\\Models\\User), 'ebbf29da-16d7-4...', Object(Illuminate\\Auth\\Notifications\\ResetPassword), 'mail')
+#11 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Notifications\\NotificationSender->Illuminate\\Notifications\\{closure}()
+#12 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(109): Illuminate\\Notifications\\NotificationSender->withLocale(NULL, Object(Closure))
+#13 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(79): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(Illuminate\\Auth\\Notifications\\ResetPassword))
+#14 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\ChannelManager.php(39): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(Illuminate\\Auth\\Notifications\\ResetPassword))
+#15 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(App\\Models\\User), Object(Illuminate\\Auth\\Notifications\\ResetPassword))
+#16 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Passwords\\CanResetPassword.php(27): App\\Models\\User->notify(Object(Illuminate\\Auth\\Notifications\\ResetPassword))
+#17 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Passwords\\PasswordBroker.php(72): Illuminate\\Foundation\\Auth\\User->sendPasswordResetNotification('89b709e4c8542f9...')
+#18 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Passwords\\PasswordBrokerManager.php(143): Illuminate\\Auth\\Passwords\\PasswordBroker->sendResetLink(Array)
+#19 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Auth\\Passwords\\PasswordBrokerManager->__call('sendResetLink', Array)
+#20 C:\\xampp\\htdocs\\appfrangia.cl\\app\\Http\\Controllers\\Auth\\PasswordResetLinkController.php(36): Illuminate\\Support\\Facades\\Facade::__callStatic('sendResetLink', Array)
+#21 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Auth\\PasswordResetLinkController->store(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('store', Array)
+#23 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Auth\\PasswordResetLinkController), 'store')
+#24 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#25 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#26 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\appfrangia.cl\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(28): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#37 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#46 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#47 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#65 C:\\xampp\\htdocs\\appfrangia.cl\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#66 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#67 {main}
+"} 

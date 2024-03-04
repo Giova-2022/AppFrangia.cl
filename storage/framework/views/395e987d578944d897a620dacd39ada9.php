@@ -50,7 +50,7 @@
     <!-- acceso a cotizacion y orden de compra-->
     <div class="py-2 flex w-5/6 mx-auto ">
         <div
-            class="mx-2 bg-gradient-to-b from-purple-300 to-purple-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
+            class="mx-4 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
             <div class="p-6 ">
                 <a href="<?php echo e(asset('compra')); ?>" class="text-white rounded-lg text-xs mx-auto bg-purple-600 uppercase py-2 px-3 animate-pulse">
                     OR. de compra
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div
-            class="mx-2 bg-gradient-to-b from-green-300 to-green-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
+            class="mx- bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
             <div class="p-6 ">
                 <a href="<?php echo e(asset('cotizacion')); ?>" class="text-white rounded-lg text-xs mx-auto bg-green-500 uppercase py-2 px-3">
                   Cotizacion
@@ -69,17 +69,17 @@
     </div>
     <div class="py-2 flex w-5/6 mx-auto ">
         <div
-            class="mx-2 bg-gradient-to-b from-purple-300 to-purple-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
+            class="mx-4 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
             <div class="p-6 ">
-                <a href="<?php echo e(asset('compra')); ?>" class="text-white rounded-lg text-xs mx-auto bg-purple-600 uppercase py-2 px-3 animate-pulse">
+                <a href="<?php echo e(asset('compra')); ?>" class="text-white rounded-lg text-xs mx-auto bg-gray-600 uppercase py-2 px-3 ">
                     Ver productos
                   </a>
             </div>
         </div>
         <div
-            class="mx-2 bg-gradient-to-b from-green-300 to-green-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
+            class="mx-2 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
             <div class="p-6 ">
-                <a href="" class="text-white rounded-lg text-xs mx-auto bg-green-500 uppercase py-2 px-3">
+                <a href="" class="text-white rounded-lg text-xs mx-auto bg-gray-500 uppercase py-2 px-3">
                   portafolio
                 </a>
               </div>
