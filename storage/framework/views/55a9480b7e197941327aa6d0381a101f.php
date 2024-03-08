@@ -53,7 +53,7 @@
             <div class="grid grid-cols-2 gap-4">
 
                 <div>
-                    <label for="id_cot" class="block mb-2">ID Cotización</label>
+                    <label for="id_cot" class=" mb-2">ID Cotización</label>
                     <input type="number" name="id_cot" id="id_cot" class="border rounded-md p-2 w-full"
                         value="<?php echo e(old('id_cot')); ?>">
                 </div>
@@ -133,29 +133,29 @@
                         <label for="diseno_no">No</label>
                     </div>
                 </div>
-                <div class="contenedor-precio display-block w-40 ">
+                <div class="contenedor-precio abosolute w-40 ">
                     <div>
-                        <label for="neto" class="block mb-2">Neto</label>
-                        <input type="price" name="neto" id="neto" class="border rounded-md p-2 w-full"
+                        <label for="neto" class="absolute right-64 my-auto mb-2">Neto</label>
+                        <input type="price" name="neto" id="neto" class="border mb-3 rounded-md p-1 w-full"
                             value="<?php echo e(old('neto')); ?>" onkeyup="calcularIVA()">
                     </div>
 
                     <div>
-                        <label for="iva" class="block mb-2">IVA (19%)</label>
-                        <input type="price" name="iva" id="iva" class="border rounded-md p-2 w-full"
+                        <label for="iva" class="absolute right-64 my-auto mb-2">IVA (19%)</label>
+                        <input type="price" name="iva" id="iva" class="border mb-3 rounded-md p-2 w-full"
                             value="<?php echo e(old('iva')); ?>" readonly>
                     </div>
 
                     <div>
-                        <label for="total" class="block mb-2">Total</label>
-                        <input type="price" name="total" id="total" class="border rounded-md p-2 w-full"
+                        <label for="total" class="absolute right-64 my-auto mb-2">Total</label>
+                        <input type="price" name="total" id="total" class="border mb-3 rounded-md p-2 w-full"
                             value="<?php echo e(old('total')); ?>" readonly>
                     </div>
 
                 </div>
 
                 <button type="submit"
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Crear pedido</button>
+                    class=  "mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Crear Orden de compra</button>
         </form>
     </div>
 
