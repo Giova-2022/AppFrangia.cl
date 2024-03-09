@@ -77,6 +77,6 @@
 
 <!-- Script de flowbite -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
+<script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
 </html>
 

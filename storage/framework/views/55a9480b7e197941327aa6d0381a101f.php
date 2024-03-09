@@ -29,11 +29,12 @@
         </h2>
      <?php $__env->endSlot(); ?>
 
-    <div class="py-5">
+    <!-- cover-->
+    <div class="py-5 z-30 absolute">
         <div class="w-5/6 mx-auto sm:px-6 lg:px-8  ">
             <div class="bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="p-6 ">
-                    <h3><?php echo e(Auth::user()->name); ?> estas por realizar una orden de compra
+                    <h3><?php echo e(Auth::user()->name); ?> es neceseario llenar todos los campos
                         <b> <a href="https://wa.me/56936384308" class=" text-blue-700 text-xs ">Necesito ayuda!</a></b>
                     </h3>
 
@@ -42,124 +43,170 @@
         </div>
     </div>
 
+    <!-- fin cover-->
+
+
+
 
     <!--Formulario orden de compra-->
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-2xl font-bold mb-4">Formulario de pedido</h1>
 
-        <form action="/pedidos" method="post" enctype="multipart/form-data">
-            <?php echo csrf_field(); ?>
 
-            <div class="grid grid-cols-2 gap-4">
+    <form class="w-11/12 mx-auto pt-44 mb-8">
+        <div class="mb-5 mx-auto text-center">
+            <h1 class="flex items-center text-5xl font-extrabold  dark:text-black">Orden<span
+                    class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2">
+                    DE COMPRA</span></h1>
 
-                <div>
-                    <label for="id_cot" class=" mb-2">ID Cotización</label>
-                    <input type="number" name="id_cot" id="id_cot" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('id_cot')); ?>">
-                </div>
+        </div>
 
-                <div>
-                    <label for="nombre" class="block mb-2">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('nombre')); ?>">
-                </div>
 
-                <div>
-                    <label for="rut" class="block mb-2">Rut</label>
-                    <input type="text" name="rut" id="rut" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('rut')); ?>">
-                </div>
 
-                <div>
-                    <label for="categoria" class="block mb-2">Categoría</label>
-                    <select name="categoria" id="categoria" class="border rounded-md p-2 w-full">
-                        <option value="">Seleccione una categoría</option>
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="producto" class="block mb-2">Producto</label>
-                    <input type="text" name="producto" id="producto" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('producto')); ?>">
-                </div>
-
-                <div>
-                    <label for="descripcion" class="block mb-2">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" class="border rounded-md p-2 w-full" rows="4"><?php echo e(old('descripcion')); ?></textarea>
-                </div>
-
-                <div>
-                    <label for="detalle" class="block mb-2">Detalle</label>
-                    <textarea name="detalle" id="detalle" class="border rounded-md p-2 w-full" rows="4"><?php echo e(old('detalle')); ?></textarea>
-                </div>
-
-                <div>
-                    <label for="alto" class="block mb-2">Alto</label>
-                    <input type="number" name="alto" id="alto" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('alto')); ?>">
-                </div>
-
-                <div>
-                    <label for="ancho" class="block mb-2">Ancho</label>
-                    <input type="number" name="ancho" id="ancho" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('ancho')); ?>">
-                </div>
-
-                <div>
-                    <label for="img1" class="block mb-2">Imagen 1</label>
-                    <input type="file" name="img1" id="img1" class="border rounded-md p-2 w-full">
-                </div>
-
-                <div>
-                    <label for="img2" class="block mb-2">Imagen 2</label>
-                    <input type="file" name="img2" id="img2" class="border rounded-md p-2 w-full">
-                </div>
-
-                <div>
-                    <label for="cantidad" class="block mb-2">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" class="border rounded-md p-2 w-full"
-                        value="<?php echo e(old('cantidad')); ?>">
-                </div>
-
-                <div class="mb-3">
-                    <label for="diseno" class="block mb-2">Diseño</label>
-                    <div class="flex items-center">
-                        <input type="radio" name="diseno" id="diseno_si" value="si" class="mr-2" checked>
-                        <label for="diseno_si">Sí</label>
-                        <input type="radio" name="diseno" id="diseno_no" value="no" class="ml-4 mr-2">
-                        <label for="diseno_no">No</label>
-                    </div>
-                </div>
-                <div class="contenedor-precio abosolute w-40 ">
-                    <div>
-                        <label for="neto" class="absolute right-64 my-auto mb-2">Neto</label>
-                        <input type="price" name="neto" id="neto" class="border mb-3 rounded-md p-1 w-full"
-                            value="<?php echo e(old('neto')); ?>" onkeyup="calcularIVA()">
-                    </div>
-
-                    <div>
-                        <label for="iva" class="absolute right-64 my-auto mb-2">IVA (19%)</label>
-                        <input type="price" name="iva" id="iva" class="border mb-3 rounded-md p-2 w-full"
-                            value="<?php echo e(old('iva')); ?>" readonly>
-                    </div>
-
-                    <div>
-                        <label for="total" class="absolute right-64 my-auto mb-2">Total</label>
-                        <input type="price" name="total" id="total" class="border mb-3 rounded-md p-2 w-full"
-                            value="<?php echo e(old('total')); ?>" readonly>
-                    </div>
+        <!-- Busqueda-->
+        <div class="contenedor w-44 m-auto">
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+                Cotizacion</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
 
                 </div>
-
+                <input type="search" id="default-search" placeholder="Nº de Cotizacion"
+                    class="block w-full px-6 ps-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    required />
                 <button type="submit"
-                    class=  "mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Crear Orden de compra</button>
-        </form>
-    </div>
+                    class="  text-white min-w-14 flex items-center absolute -end-20 bottom-0.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring--800">
+                    <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    Buscar
+                </button>
+            </div>
+        </div>
+        <!-- Nombre de Ususario-->
+        <div class="fondo__formulario  bg-gray-400 p-3 rounded-lg mt-3 w-full">
+            <div class="flex mt-2">
+                <span
+                    class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+                    </svg>
+                </span>
+                <input type="text" id="website-admin" placeholder="Nombre"
+                    class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
-    </div>
+            </div>
+            <div class="flex mt-2">
+                <input type="number" id="number-input" aria-describedby="helper-text-explanation"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Rut" required />
+
+            </div>
+            <div class="flex mt-2">
+                <select id="countries"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>PRODUCTOS</option>
+                    <option value="FLYERS">FLYERS</option>
+                    <option value="TARJETAS">TARJETAS</option>
+                    <option value="LETRERO">LETRERO</option>
+                    <option value="CALENDARIO">CALENDARIO</option>
+                    <option value="CALENDARIO">TALONARIO</option>
+                </select>
+            </div>
+
+            <div class="flex mt-2">
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-white dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </textarea>
+            </div>
+
+
+            <br>
+            <div class="flex mt-2">
+                <input type="number" id="number-input" aria-describedby="helper-text-explanation"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mr-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="alto" required />
+                <input type="number" id="number-input" aria-describedby="helper-text-explanation"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mr-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="ancho" required />
+                <input type="number" id="number-input" aria-describedby="helper-text-explanation"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Cantidad" required />
+            </div>
+            <h4 class="mt-6 text-xl text-center">¿Tienes Diseño?</h4>
+            <br>
+
+            <div class="flex -mt-4 flex-place-content-center justify-center">
+                <input type="radio" id="has-design" name="design" value="true"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="has-design" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">SI</label>
+
+                <input type="radio" id="no-design" name="design" value="false" checked
+                    class="ml-10 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="no-design" class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">NO</label>
+            </div>
+
+            <div class="flex mt-2 mb-28">
+                <label for="file_input" class="text-center text-white font-bold">Sube tu Diseño </label>
+                <div class="flex mt-2 items-center justify-center w-full h-10 bg-no-repeat bg-contain bg-center rounded-lg cursor-pointer border border-gray-300 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    id="file-upload">
+                    <img src="image/iconos/libro.png" alt="Archivo" class="w-10 z-30">
+
+                    <span id="file-name" class="text-sm text-gray-900 ml-2"></span>
+
+                    <input
+                        class="block w-full text-sm text-gray-900 opacity-0 border-0 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        id="file_input" type="file">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 border border-violet-600  bg-slate-500 rounded-lg sm:max-w-5/6">
+                <div class="row-[1/4] border border-yellow-600 ">
+                    <img src="image/iconos/Oc.png" alt="">
+
+                </div>
+
+                <div class="col-start-2 col-span-1 border border-red-600" >
+                    <h4 class="text-center text-white uppercase text-xs absolute mx-auto ml-11 mt-2 ">neto</h4>
+                </div>
+
+                <div class="col-start-3 col-span-2" >
+                        <input type="number" id="neto" placeholder="$"
+                        class="h-8 col-start-2 col-span-2  bg-orange-400 1  mr-4 rounded-none rounded-l-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </div>
+
+                <div class="col-start-2 col-span-1 border border-red-600" >
+                    <h4 class="text-center text-white uppercase text-xs absolute mx-auto ml-11 mt-2 ">19%</h4>
+                </div>
+                
+                <div class="col-start-3 col-span-2" >
+                        <input type="number" id="iva" placeholder="$"
+                        class="h-8 col-start-2 col-span-2  bg-orange-400 1  mr-4 rounded-none rounded-l-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </div>
+                
+                <div class="col-start-2 col-span-1 border border-red-600" >
+                    <h4 class="text-center text-white uppercase text-lg absolute mx-auto ml-5 mt-1 ">total</h4>
+                </div>
+                
+                <div class="col-start-3 col-span-2" >
+                        <input type="number" id="total" placeholder="$"
+                        class="h-8 col-start-2 col-span-2  bg-orange-400 1  mr-4 rounded-none rounded-l-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                </div>
+                
+            </div>
+
+           
+
+
+        </div>
+    </form>
+
+
+
+
+
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginal9ac128a9029c0e4701924bd2d73d7f54)): ?>
@@ -174,19 +221,4 @@
 
 
 <?php echo $__env->make('template.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<script>
-    function calcularIVA() {
-        const neto = parseFloat(document.getElementById('neto').value); // Ensure numerical value
-        if (isNaN(neto)) {
-            alert('Ingrese un valor numérico válido para el neto.');
-            return;
-        }
-
-        const iva = neto * 0.19;
-        const total = neto + iva;
-
-        document.getElementById('iva').value = iva.toFixed(2);
-        document.getElementById('total').value = total.toFixed(2);
-    }
-</script>
 <?php /**PATH C:\xampp\htdocs\appfrangia.cl\resources\views/compra.blade.php ENDPATH**/ ?>
