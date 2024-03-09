@@ -28,16 +28,52 @@ function calcularIva() {
 
     // Actualizar el valor de entrada total
     document.getElementById('total').value = total.toFixed();
-
-
-  
-
+    // Llamar a calcularIva cuando cambia el valor de neto o IVA
+    document.getElementById('neto').addEventListener('input', calcularIva);
+    document.getElementById('iva').addEventListener('input', calcularIva);
+    document.getElementById("total").addEventListener('input', formattedTotal);
 }
 
-// Llamar a calcularIva cuando cambia el valor de neto o IVA
-document.getElementById('neto').addEventListener('input', calcularIva);
-document.getElementById('iva').addEventListener('input', calcularIva);
-document.getElementById("total").addEventListener('input', formattedTotal);
 
 
+
+
+
+// Dark mode toggle functionality
+var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+// Update icons based on initial preference (use Tailwind classes)
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden'); // Use Tailwind's `hidden` class
+    document.documentElement.classList.add('dark'); // Use Tailwind's `dark` class for dark mode styles
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+}
+
+var themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', function () {
+
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    }
+});
 
