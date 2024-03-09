@@ -16,22 +16,6 @@
 
 @include('template.header')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="w-5/6 mx-auto">
 
     <x-guest-layout class="">

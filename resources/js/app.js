@@ -77,3 +77,25 @@ themeToggleBtn.addEventListener('click', function () {
     }
 });
 
+
+
+//hora actual
+const horaActual = document.getElementById("hora-actual");
+
+function mostrarHora() {
+  const opciones = {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: false,
+  };
+
+  const formateador = new Intl.DateTimeFormat("es-ES", opciones);
+  const fecha = new Date();
+
+  horaActual.textContent = formateador.format(fecha);
+}
+
+mostrarHora();
+
+setInterval(mostrarHora, 1000); // Actualiza la hora cada segundo

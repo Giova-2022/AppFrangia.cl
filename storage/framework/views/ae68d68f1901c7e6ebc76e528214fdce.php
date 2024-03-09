@@ -15,8 +15,11 @@
         <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
     </head>
     <body class="font-sans antialiased">
+
+    
         <div class="min-h-screen bg-gray-100">
             <?php echo $__env->make('layouts.navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 
             <!-- Page Heading -->
             <?php if(isset($header)): ?>
@@ -28,6 +31,8 @@
                 </header>
             <?php endif; ?>
 
+
+            
             <!-- Page Content -->
             <main>
                 <?php echo e($slot); ?>
@@ -35,5 +40,9 @@
             </main>
         </div>
     </body>
+
+    
+<?php echo $__env->make('template.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 </html>
 <?php /**PATH C:\xampp\htdocs\appfrangia.cl\resources\views/layouts/app.blade.php ENDPATH**/ ?>
