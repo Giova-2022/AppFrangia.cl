@@ -16,22 +16,6 @@
 
 <?php echo $__env->make('template.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="w-5/6 mx-auto">
 
     <?php if (isset($component)) { $__componentOriginal69dc84650370d1d4dc1b42d016d7226b = $component; } ?>
