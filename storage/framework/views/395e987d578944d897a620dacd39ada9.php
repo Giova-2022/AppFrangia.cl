@@ -50,7 +50,7 @@
     <!-- acceso a cotizacion y orden de compra-->
     <div class="py-2 flex w-5/6 mx-auto ">
         <div
-            class="mx-4 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
+            class="mx-4 mr-4 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
             <div class="p-6 ">
                 <a href="<?php echo e(asset('compra')); ?>" class="text-white rounded-lg text-xs mx-auto bg-purple-600 uppercase py-2 px-3 animate-pulse">
                     OR. de compra
@@ -67,9 +67,9 @@
         </div>
         
     </div>
-    <div class="py-2 flex w-5/6 mx-auto ">
+    <div class="py-2  flex w-5/6 mx-auto ">
         <div
-            class="mx-4 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
+            class="mx-4 mr-4 bg-gradient-to-b from-gray-300 to-gray-100 rounded-xl overflow-hidden shadow-xl sm:rounded-lg  mx-auto sm:px-6 lg:px-8 flex-1">
             <div class="p-6 ">
                 <a href="<?php echo e(asset('compra')); ?>" class="text-white rounded-lg text-xs mx-auto bg-gray-600 uppercase py-2 px-3 ">
                     Ver productos
@@ -99,8 +99,8 @@
 <?php unset($__componentOriginal9ac128a9029c0e4701924bd2d73d7f54); ?>
 <?php endif; ?>
 
-
 <?php echo $__env->make('preguntas', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 
 <?php echo $__env->make('template/footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
