@@ -12635,3 +12635,87 @@ Did you mean one of these?
 #54 C:\\xampp\\htdocs\\appfrangia.cl\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 {main}
 "} 
+[2024-03-16 03:13:21] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:13:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:14:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:15:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:16:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:17:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:18:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:19:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:20:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:21:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:22:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:23:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:24:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:25:17] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:25:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:26:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:27:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:28:13] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:28:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:29:14] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2024-03-16 03:29:45] local.ERROR: Unmatched '}' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Unmatched '}' at C:\\xampp\\htdocs\\appfrangia.cl\\app\\Models\\productos.php:13)
+[stacktrace]
+#0 {main}
+"} 
