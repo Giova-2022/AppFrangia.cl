@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,6 @@ Route::get('/terminosYcondiciones', function () {
     return view('terminosYcondiciones');
 });
 
-Route::get('/productos', function () {
-    return view('productos');
-});
 
 Route::get('/portafolio', function () {
     return view('portafolio');
@@ -34,20 +32,9 @@ Route::get('/contacto', function () {
     return view('contacto');
 });
 
-
-
-
-
-/** get('/name) aqui va el nombre de la ruta que se pone en la url
- * return view (se pone el nombre de la vista que esta en la carpeta resources/views)
- */
-
-
-
  Route::get('/', function () {
     return view('home');
 });
-
 
 
 Route::get('/compra', function () {
@@ -66,6 +53,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    //ruta de carrito de compra
+    Route::get('/front/productos', [FrontController::class, 'productos']);
+    Route::post('/compra', [App\Http\CartController::class, 'compra'])->name('compra');
+    Route::get('/checkout', [App\Http\CartController::class, 'checkout'])->name('checkout');
+    Route::get('/eliminar', [App\Http\CartController::class, 'eliminar'])->name('eliminar');
+    Route::post('/borrarItem', [App\Http\CartController::class, 'borrarItem'])->name('borrarItem');
+
 });
 
 

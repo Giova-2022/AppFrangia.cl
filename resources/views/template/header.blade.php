@@ -83,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ asset('productos') }}"
+                                    <a href="{{ asset('front/productos') }}"
                                         class="flex items-center text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 group">
                                         <span class="sr-only">Pro Version</span>
                                         <svg class="w-3 h-3 me-2 text-gray-400 dark:text-gray-500 group-hover:text-blue-600 dark:group-hover:text-blue-500"
