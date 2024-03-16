@@ -55,6 +55,7 @@ class ProfileController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return Redirect::to('/');
+        // Redirect to products page after deletion
+        return Redirect::to('/productos');
     }
 }

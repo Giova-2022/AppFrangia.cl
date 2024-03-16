@@ -200,3 +200,4 @@
 </x-app-layout>
 
 
+@include('template.footer')
